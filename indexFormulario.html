@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
@@ -10,8 +10,115 @@
     <form action="https://www.google.com/search" method="get">
         <input type="text" name="q" >
         <button type="submit" >Buscar</button>
+    </form>
+    <br>
+    <br>
+    <h1>datos</h1>
+    <form action="#">
+        <label  for="nom"> Nombre</label> <!--Se pone antes del input para especificar-->
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" readonly id="nom">
+        <!--place para que se muestrre un texto desntro del input. el readonly para proteger la escritura  -->
+        <!-- el form relaciona el label con el input con el id para que cuando le de en el label me resalte el input-->
+        <br>
+        <br>
+        <label>Apellido</label>
+        <input type="text" 
+        name="apellido" 
+        value="Gomez" 
+        readonly
+        disabled>
+        <!--value para cargar un valor por defecto. Disable para desabilitar controles  -->
+        <div>
+            <label >Email</label>
+            <input type="email" name="correo" placeholder="example@example.com" required maxlength="60">
+            <!--el tipo email hace validaciones especificas para un correo ,El required es para que sea obligatorio, el maxlength define el maximo de caracteres -->
+        </div>
+        <div>
+            <label >Edad</label>
+            <input type="number" name="edad" value="18" min="1" max="120">
+            <!--El min estabalece un minimo y el maximo de edad que se puede poner-->
+        </div>
+        <fieldset> <!--Genera un recuadro aparte-->
+            <legend>Datos de u </legend> <!-- es un titulo al fieldset-->
+            <label >Fecha de matricula </label>
+            <input type="date" name="fechaatricula" required >
+            <input type="datetime" name="fechaatricula2" required >
+            <input type="datetime-local" name="fechaatricula3" required >
+        </fieldset>
+        <div>
+            <label> Foto</label>
+            <input type="file" name="foto">
+        </div>
+        <div>
+            <label >Color favorito </label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label > contraseña</label>
+            <input type="password" name="contraseña"> 
+        </div>
+
+        <div>
+            <label>Clasiifcación</label>
+            <label >
+                <input type="radio" name="calsificacion"  value="a">
+                Opcion 1
+            </label>
+            <label >
+                <input type="radio" name="calsificacion" value="b" checked> <!--el checked es una opcion preseleccionada-->
+                Opcion 2
+            </label>
+            <label >
+                <input type="radio" name="calsificacion" value="c">
+                Opcion 3
+            </label>
+        </div>
+
+        <fieldset>
+            <legend>Jobs</legend>
+            <label >
+                <input type="checkbox" name="opt1" value="a" >
+                Opcion 1
+                <label >
+                    <input type="checkbox" name="opt1" value="b" >
+                    Opcion 2
+                </label>
+                <label >
+                    <input type="checkbox" name="opt1" value="c" checked >
+                    Opcion 3
+                </label>
+            </label>
+        </fieldset>
+        <div>
+            <label> Cuidad </label>
+            <select name="Cuidad">
+                <option value="1">Tunja</option> <!-- el pirmero siempre es el que sale en el cuadro -->
+                <option value="2">Duitama</option>
+                <option value="3" selected>Sogamoso</option> <!-- selcted seleciona por defecto al cuadro-->
+            </select>
+        </div>
+        <div>
+            <label>Observaciones</label>
+            <textarea name="obs" cols="13" rows="3"> 
+                pepitoooooo
+            </textarea><!--el cols y el rows lo que hace es cuadrar el tamaño del cuadro texto -->
+        </div>
+        <div>
+            <button type="submit"> Enviar</button>
+            <input type="button">
+            <input type="submit" value="Enviar"> <!-- se puede hacer con el input y con el buttto pero el button se deja modificar -->
+            <button type="reset">Retearrrrrrr</button>
+        </div>
+        <div>
+            <label>codigo</label>
+            <input type="hidden" name="cod" value="1234">
+        </div>
 
 
+
+        
+
+        
     </form>
 </body>
 </html>
