@@ -1,4 +1,36 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; 
+    padding: 0px; 
+}
+
+.ejemplo{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border: 1px solid #0000ff;
+    border-top: 2px double #67ff2b;
+    border-bottom: 10px dotted #ff0000 ;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px ;
+    border-top-left-radius: 50% ;
+    /*tamaño altura y ancho*/
+    height: 400px;
+    width: 300px;
+    min-height: 100px;
+    max-width: 1000;
+    /*margen externa del elemento*/
+    margin: 16px;
+    margin: 25px 100px; /*el de l derecha es top y butom arriba y abajo y el de la derecha es derecha y izquierda*/
+    margin: 100px 20px 128px 40px; /*en  manecillas del reloj*/
+    margin-right: 100px;
+    margin-left: 200px;
+    margin-block: 50px; /*arriba y abajo*/
+    margin-block-start: 50px; /*arriba*/
+    margin-block-end: 30px; /*abajo*/
+    margin-inline: 100px ;
+    margin: auto; /*calcula las laterales*/
+    
+    /*el padding es la distancia o margen interna del div*/
+    padding: 50px;
+
 }
