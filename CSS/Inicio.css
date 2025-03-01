@@ -153,3 +153,70 @@ div{
     background: greenyellow;
     border: 1px solid red;
 }
+.boton{
+    border: 0px;
+    background-color: blue;
+    color: antiquewhite;
+    width: 150px;
+    height: 80px;
+    border-radius: 16px;
+    box-shadow: 1px 10px 5px 3px black;
+    transition-property: background-color,box-shadow,width; /*modifica el colory otros elemntos */
+    transition-duration: 2s,500ms,1s;/*define el tiempo de las animaciones*/
+    transition-delay: 1s,0s,500ms; /*cuanto tiempo despues de poner el mause se active el efecto*/
+    transition-timing-function: linear;
+}
+.btn-y{
+    background-color: greenyellow;
+}
+
+
+.boton:hover{
+    background-color: red;
+    box-shadow: 10px 1px 5px 3px green;
+    width: 300px;
+}
+
+.divanimado{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    border: 1px solid black;
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    animation: ejemploAnimacion;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes ejemploAnimacion{ /*crea animaciones*/
+   0%{
+    border-radius: 150px;
+
+   }
+   25%{
+    background-color: blue;
+    border-width: 20px;
+
+   }
+   50%{
+    background-color: aqua;
+
+   }
+   75%{
+    background-color: yellow;
+
+   }
+   100%{
+    background-color: violet;
+    top:calc(100vh - 100px);
+
+   }
+
+
+}
+
