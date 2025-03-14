@@ -1,6 +1,6 @@
 <?php
 class Persona{
-    private $nombre;
+    private $nombre; // el provate es un modificaddor de acceso 
     private $apellido;
     private $edad;
     private $pasatiempos;
