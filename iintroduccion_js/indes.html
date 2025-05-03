@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Introduccion a JavaScript</title>
 </head>
 <body>
-    
+    <script>
+        //en javaScript se puede o no poner ;
+        //es interpretado y de tipado dinamico 
+
+        alert("hola mundo"); //impirmir en el navegador
+        console.log(123450) //imprimir solo en consola
+        
+        //asignacion de varibales var, let, const
+        var nombre = "Juan";
+        let apellido = "Gomez";
+
+        let edad =12;
+        let salario = 25000.50;
+        let mayorEdad = true; 
+
+        apellido = "perez"; //let te permite cambiar su contenido depsues de definirlo conts no
+
+        console.log(nombre + " " + apellido);
+        console.log(`Nombre :${nombre} ${apellido}`); //forma mas moderna de cocatenar 
+        console.log(apellido.toUpperCase()); // con el . perimte ver las propiedades del tipo de datos
+
+
+        //LISTAS --------------------------------------------------------------------------
+
+        let numeros = [1,2,3,4,5,6,7,8,9,10];
+        // segunda forma para hacerlo vacio : numeros = Array(10);
+        let lista = ['a',1,2.3,true,[],{}]; //array de elementos
+
+        //OBJETOS --------------------------------------------------------------------------
+
+        let persona = {
+            nombre: "ana",
+            apellido : "gomez",
+            edad: 30 ,
+            jobs: ['cine','musica']
+
+        };
+
+        console.log(persona.nombre, persona.apellido);
+
+        //CONDICIONALES--------------------------------------------------------------------------
+
+        if(persona<180){  //&& and,  ||or,  !negacion,  == igual,  ===igual, !=diferente  y todos respecto a >, <, =<, >=
+            //code...
+        }else {
+            //code..
+        }
+
+        console.log(2 == "2"); //evalua solo valores
+        console.log(2 === "2"); //es un igual mas estricto que compara los tipos de datos 
+
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
